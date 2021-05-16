@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.IniciarSesionController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="699.0" prefWidth="1056.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label alignment="CENTER" layoutX="510.0" layoutY="172.0" prefHeight="53.0" prefWidth="230.0" text="Iniciar Sesión" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <AnchorPane layoutY="-3.0" prefHeight="707.0" prefWidth="38.0" style="-fx-background-color: #0063B1;" />
+                <AnchorPane layoutX="38.0" layoutY="-4.0" prefHeight="707.0" prefWidth="154.0" style="-fx-background-color: #0078D7;" />
+                <Label alignment="CENTER" layoutX="327.0" layoutY="15.0" prefHeight="70.0" prefWidth="593.0" text="Turnero OOMAPAS" textAlignment="CENTER">
+                    <font>
+                        <Font size="48.0" />
+                    </font>
+                </Label>
+                <Line endX="763.0" layoutX="293.0" layoutY="84.0" opacity="0.5" startX="-100.0" />
+                <Label fx:id="dateLabel" alignment="CENTER" layoutX="207.0" layoutY="598.0" prefHeight="35.0" prefWidth="833.0" text="Martes 23 de Febrero del 2021" textAlignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="timeLabel" alignment="CENTER" layoutX="207.0" layoutY="633.0" prefHeight="35.0" prefWidth="833.0" text="10:34 A.M." textAlignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtUsuario" layoutX="490.0" layoutY="273.0" prefHeight="51.0" prefWidth="396.0">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </TextField>
+                <Label alignment="CENTER" layoutX="401.0" layoutY="281.0" text="Usuario:" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="362.0" layoutY="356.0" text="Contraseña:" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="txtPassword" layoutX="489.0" layoutY="348.0" prefHeight="51.0" prefWidth="396.0">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="btnIniciarSesion" alignment="CENTER" layoutX="489.0" layoutY="417.0" mnemonicParsing="false" onAction="#didClickIniciarSesionButton" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Iniciar Sesión" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Button>
+                <ImageView fx:id="imgLogo" fitHeight="51.0" fitWidth="151.0" layoutX="240.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../res/logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</GridPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="542.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MenuPuntosDeAtencionController">
+    <children>
+        <Label alignment="CENTER" layoutX="197.0" layoutY="14.0" text="Lista de Puntos de Atención" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblPuntoDeAtencion" layoutX="73.0" layoutY="77.0" prefHeight="194.0" prefWidth="718.0">
+            <columns>
+                <TableColumn fx:id="colFolioPuntoDeAtencion" editable="false" maxWidth="1000.0" prefWidth="75.0" text="Folio" />
+                <TableColumn fx:id="colPuntoPuntoDeAtencion" editable="false" prefWidth="75.0" text="Punto" />
+            <TableColumn fx:id="colSucursalPuntoDeAtencion" editable="false" prefWidth="75.0" text="Sucursal" />
+                <TableColumn fx:id="colEmpleadoPuntoDeAtencion" editable="false" prefWidth="75.0" text="Empleado" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="btnAniadirPuntoDeAtencion" alignment="CENTER" layoutX="578.0" layoutY="319.0" mnemonicParsing="false" onAction="#didClickAniadirPuntoDeAtencionButton" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Añadir" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnEditarPuntoDeAtencion" alignment="CENTER" layoutX="578.0" layoutY="366.0" mnemonicParsing="false" onAction="#didClickEditarPuntoDeAtencionButton" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Editar" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnEliminarPuntoDeAtencion" alignment="CENTER" layoutX="578.0" layoutY="487.0" mnemonicParsing="false" onAction="#didClickEliminarPuntoDeAtencionButton" style="-fx-background-color: red; -fx-background-radius: 2em;" text="ELIMINAR" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+      <Label alignment="CENTER" layoutX="258.0" layoutY="285.0" text="Catalago de Puntos de Atención" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCatalagoPuntoDeAtencion" layoutX="174.0" layoutY="319.0" prefHeight="205.0" prefWidth="394.0">
+         <columns>
+            <TableColumn fx:id="colFolioCatalagoPuntoDeAtencion" editable="false" maxWidth="1000.0" prefWidth="75.0" text="Folio" />
+            <TableColumn fx:id="colPuntoCatalagoPuntoDeAtencion" editable="false" prefWidth="75.0" text="Tipo" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+    </children>
+</AnchorPane>

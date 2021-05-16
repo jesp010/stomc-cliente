@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="542.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MenuTurnosController">
+    <children>
+        <Label alignment="CENTER" layoutX="298.0" layoutY="14.0" text="Lista de Turnos" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+      <ScrollPane layoutX="14.0" layoutY="76.0">
+         <content>
+              <TableView fx:id="tblTurnos" prefHeight="281.0" prefWidth="835.0">
+                  <columns>
+                  <TableColumn fx:id="colSucursal" maxWidth="3000.0" prefWidth="75.0" text="Sucursal" />
+                      <TableColumn fx:id="colFecha" editable="false" maxWidth="3000.0" prefWidth="75.0" text="Fecha" />
+                  <TableColumn fx:id="colNumeroTurno" maxWidth="1500.0" prefWidth="70.0" text="No°" />
+                  <TableColumn fx:id="colTipoTurno" maxWidth="3000.0" prefWidth="66.0" text="Tipo" />
+                      <TableColumn fx:id="colHoraInicio" editable="false" maxWidth="3500.0" prefWidth="160.0" text="Hora Inicio" />
+                      <TableColumn fx:id="colMinutosEsperando" editable="false" prefWidth="139.0" text="Minutos Esperando" />
+                  <TableColumn fx:id="colMinutosAtendiendo" prefWidth="75.0" text="Minutos Atendiendo" />
+                      <TableColumn fx:id="colEstado" editable="false" maxWidth="3500.0" prefWidth="75.0" text="Estado" />
+                      <TableColumn fx:id="colNoEmpleado" editable="false" maxWidth="4000.0" prefWidth="75.0" text="No° Empleado" />
+                  </columns>
+                  <columnResizePolicy>
+                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                  </columnResizePolicy>
+              </TableView>
+         </content>
+      </ScrollPane>
+        <Button fx:id="btnConsultar" alignment="CENTER" layoutX="409.0" layoutY="469.0" mnemonicParsing="false" onAction="#didClickConsultarButton" prefHeight="39.0" prefWidth="232.0" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Consultar" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnGenerarReporte" alignment="CENTER" layoutX="718.0" layoutY="413.0" mnemonicParsing="false" onAction="#didClickGenerarReporteButton" prefHeight="81.0" prefWidth="106.0" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Generar Reporte" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="340.0" layoutY="377.0" text="Consultar Turnos" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="426.0" text="Fecha Inicio:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <DatePicker fx:id="dpFechaInicio" editable="false" layoutX="122.0" layoutY="420.0" prefHeight="39.0" prefWidth="163.0" />
+      <Label layoutX="33.0" layoutY="475.0" text="Fecha Fin:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpFechaFin" editable="false" layoutX="122.0" layoutY="469.0" prefHeight="39.0" prefWidth="163.0" />
+      <Label layoutX="375.0" layoutY="426.0" text="Estado:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+        <ComboBox fx:id="cboxEstado" layoutX="443.0" layoutY="420.0" prefHeight="39.0" prefWidth="232.0" visibleRowCount="4" />
+      <Button fx:id="btnResetDatePickerInicio" alignment="CENTER" layoutX="293.0" layoutY="420.0" mnemonicParsing="false" onAction="#didClickResetDatePickerInicioButton" prefHeight="39.0" prefWidth="39.0" style="-fx-background-color: red; -fx-background-radius: 2em;" text="X" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnResetDatePickerFin" alignment="CENTER" layoutX="293.0" layoutY="469.0" mnemonicParsing="false" onAction="#didClickResetDatePickerFinButton" prefHeight="39.0" prefWidth="39.0" style="-fx-background-color: red; -fx-background-radius: 2em;" text="X" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

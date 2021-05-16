@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ClientFrontController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="699.0" prefWidth="1056.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Button fx:id="newTurnCajaButton" layoutX="232.0" layoutY="226.0" mnemonicParsing="false" onAction="#didClickNewTurnCajaButton" prefHeight="65.0" prefWidth="312.0" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Caja" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" layoutX="273.0" layoutY="161.0" prefHeight="53.0" prefWidth="230.0" text="Nuevo Turno" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <AnchorPane layoutY="-3.0" prefHeight="707.0" prefWidth="38.0" style="-fx-background-color: #0063B1;" />
+                <AnchorPane layoutX="38.0" layoutY="-4.0" prefHeight="707.0" prefWidth="154.0" style="-fx-background-color: #0078D7;">
+                    <Button fx:id="btnCerrarSesion" alignment="CENTER" layoutX="16.0" layoutY="656.0" mnemonicParsing="false" onAction="#didClickCerrarSesionButton" style="-fx-background-color: WHITE; -fx-background-radius: 2em;" text="Cerrar Sesión" textAlignment="CENTER" textFill="#0078d7" wrapText="true">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Button>
+                    <Label fx:id="txtEmpleado" alignment="BOTTOM_CENTER" layoutX="19.0" layoutY="502.0" prefHeight="141.0" prefWidth="116.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+               <AnchorPane layoutX="5.0" layoutY="14.0" prefHeight="123.0" prefWidth="145.0" style="-fx-background-color: #0078D7; -fx-border-color: white; -fx-border-width: 2;">
+                  <children>
+                     <Label alignment="CENTER" layoutX="23.0" layoutY="14.0" text="Turnos Caja" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="System Bold" size="18.0" />
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER" layoutX="14.0" layoutY="52.0" text="Turnos Total:" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="true">
+                        <font>
+                           <Font name="System Bold" size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="txtTurnosTotalCaja" alignment="CENTER" layoutX="101.0" layoutY="52.0" prefHeight="20.0" prefWidth="32.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="System Bold" size="14.0" />
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER" layoutX="14.0" layoutY="78.0" text="Turno Actual:" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="true">
+                        <font>
+                           <Font name="System Bold" size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="txtTurnoActualCaja" alignment="CENTER" layoutX="101.0" layoutY="78.0" prefHeight="20.0" prefWidth="32.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="System Bold" size="14.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </AnchorPane>
+               <AnchorPane layoutX="5.0" layoutY="152.0" prefHeight="123.0" prefWidth="145.0" style="-fx-background-color: #0078D7; -fx-border-color: white; -fx-border-width: 2;">
+                  <children>
+                     <Label alignment="CENTER" layoutX="8.0" layoutY="14.0" text="Turnos Módulo" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                        <font>
+                           <Font name="System Bold" size="18.0" />
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER" layoutX="14.0" layoutY="52.0" text="Turnos Total:" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="true">
+                        <font>
+                           <Font name="System Bold" size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="txtTurnosTotalModulo" alignment="CENTER" layoutX="101.0" layoutY="52.0" prefHeight="20.0" prefWidth="32.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="System Bold" size="14.0" />
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER" layoutX="14.0" layoutY="78.0" text="Turno Actual:" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="true">
+                        <font>
+                           <Font name="System Bold" size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="txtTurnoActualModulo" alignment="CENTER" layoutX="101.0" layoutY="78.0" prefHeight="20.0" prefWidth="32.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="System Bold" size="14.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </AnchorPane>
+                </AnchorPane>
+                <Label alignment="CENTER" layoutX="327.0" layoutY="15.0" prefHeight="70.0" prefWidth="593.0" text="Turnero OOMAPAS" textAlignment="CENTER">
+                    <font>
+                        <Font size="48.0" />
+                    </font>
+                </Label>
+                <Line endX="763.0" layoutX="293.0" layoutY="84.0" opacity="0.5" startX="-100.0" />
+                <Line endX="-30.5" endY="-210.0" layoutX="238.0" layoutY="603.0" opacity="0.5" startX="321.5" startY="-210.0" />
+                <Label fx:id="dateLabel" alignment="CENTER" layoutX="208.0" layoutY="615.0" prefHeight="35.0" prefWidth="833.0" text="Martes 23 de Febrero del 2021" textAlignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="timeLabel" alignment="CENTER" layoutX="208.0" layoutY="650.0" prefHeight="35.0" prefWidth="833.0" text="10:34 A.M." textAlignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="newTurnModuloButton" layoutX="232.0" layoutY="304.0" mnemonicParsing="false" onAction="#didClickNewTurnModuloButton" prefHeight="65.0" prefWidth="312.0" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Módulo" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Button>
+                <Button fx:id="preguntasFrecuentesButton" alignment="CENTER" layoutX="232.0" layoutY="475.0" mnemonicParsing="false" onAction="#didClickRequisitosButton" prefHeight="65.0" prefWidth="312.0" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Requisitos de Trámites" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" layoutX="228.0" layoutY="407.0" text="Consultar Tramites" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="708.0" layoutY="166.0" prefHeight="53.0" prefWidth="230.0" text="Turno creado" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Button fx:id="imprimirTurnoButton" alignment="CENTER" layoutX="760.0" layoutY="546.0" mnemonicParsing="false" onAction="#didClickImprimirButton" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Imprimir" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Button>
+                <ScrollPane layoutX="639.0" layoutY="219.0" prefHeight="316.0" prefWidth="369.0">
+                    <content>
+                        <AnchorPane fx:id="panTicket" prefHeight="450.0" prefWidth="350.0" style="-fx-border-color: black;">
+                            <children>
+                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="50.0" layoutY="20.0" text="TURNO:" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="31.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="txtTurnoCreado" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="160.0" layoutY="14.0" prefHeight="59.0" prefWidth="141.0" text="M100" textAlignment="CENTER" underline="true" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold" size="41.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="imgLogo" fitHeight="46.0" fitWidth="127.0" layoutX="15.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../res/logo.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="txtTipoCreado" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="85.0" prefHeight="27.0" prefWidth="253.0" text="MODULOS" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER" layoutX="60.0" layoutY="112.0" prefHeight="59.0" prefWidth="230.0" text="TOME ASIENTO Y ESPERE UN MOMENTO POR FAVOR" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="126.0" layoutY="171.0" text="! GRACIAS ¡">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblTurnosAdelante" alignment="CENTER" contentDisplay="CENTER" layoutX="96.0" layoutY="198.0" text="Turnos adelante: XX" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="txtFechaCreado" alignment="CENTER" layoutX="39.0" layoutY="260.0" prefHeight="25.0" prefWidth="282.0" text="Martes 23 de Febrero del 2021" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="txtTiempoCreado" alignment="CENTER" layoutX="60.0" layoutY="285.0" prefHeight="25.0" prefWidth="230.0" text="10:34 A.M." textAlignment="CENTER">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER" layoutX="169.0" layoutY="333.0" text="Sinaloa Nte. Entre Hidalgo y" textAlignment="CENTER" />
+                                <Label alignment="CENTER" layoutX="180.0" layoutY="350.0" text="Allende, Colonia Centro" textAlignment="CENTER" />
+                                <Label alignment="CENTER" layoutX="150.0" layoutY="367.0" text="C.P. 86000 Telefono (644) 410 8383" textAlignment="CENTER" />
+                                <Label alignment="CENTER" layoutX="187.0" layoutY="384.0" text="Cd. Obregon, Sonora" textAlignment="CENTER" />
+                                <Label alignment="CENTER" layoutX="180.0" layoutY="401.0" text="www.oomapasc.gob.mx" textAlignment="CENTER" />
+                                <Label alignment="CENTER" layoutX="166.0" layoutY="418.0" text="atencion@oomapasc.gob.mx" textAlignment="CENTER" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+                    <ImageView fx:id="imgLogoVentana" fitHeight="51.0" fitWidth="151.0" layoutX="241.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../res/logo.png" />
+                        </image>
+                    </ImageView>
+            </children>
+        </Pane>
+    </children>
+</GridPane>

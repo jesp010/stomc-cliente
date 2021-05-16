@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="542.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AccionPuntoDeAtencionController">
+   <children>
+       <Label fx:id="lblPuntoDeAtencionAccion" alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="14.0" prefHeight="53.0" prefWidth="719.0" text="Punto de Atencion Accion" textAlignment="CENTER" wrapText="true">
+           <font>
+               <Font name="System Bold" size="36.0" />
+           </font>
+       </Label>
+      <Label layoutX="312.0" layoutY="232.0" text="Tipo:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="281.0" layoutY="284.0" text="Numero:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="txtNumero" layoutX="360.0" layoutY="278.0" onMousePressed="#resetField" prefHeight="39.0" prefWidth="224.0">
+         <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory min="1" max="1000"/>
+         </valueFactory>
+      </Spinner>
+      <ComboBox fx:id="cboxTipo" layoutX="360.0" layoutY="226.0" onMousePressed="#resetField" prefHeight="39.0" prefWidth="224.0" promptText="Selecciona un tipo de atención" visibleRowCount="4" />
+      <Button fx:id="btnAceptar" alignment="CENTER" layoutX="14.0" layoutY="489.0" mnemonicParsing="false" onAction="#didClickAceptarButton" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Añadir" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" alignment="CENTER" layoutX="733.0" layoutY="489.0" mnemonicParsing="false" onAction="#didClickCancelarButton" style="-fx-background-color: red; -fx-background-radius: 2em;" text="CANCELAR" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

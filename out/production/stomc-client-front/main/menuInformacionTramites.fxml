@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="542.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MenuInformacionTramitesController">
+    <children>
+        <Label alignment="CENTER" layoutX="83.0" layoutY="14.0" prefHeight="53.0" prefWidth="699.0"
+               text="Lista de Información de Trámites" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold" size="36.0"/>
+            </font>
+        </Label>
+        <Button fx:id="btnAniadir" alignment="CENTER" layoutX="14.0" layoutY="487.0" mnemonicParsing="false"
+                onAction="#didClickAniadirInformationTramiteButton" prefHeight="39.0" prefWidth="111.0"
+                style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Añadir" textAlignment="CENTER"
+                textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnEditar" alignment="CENTER" layoutX="134.0" layoutY="487.0" mnemonicParsing="false"
+                onAction="#didClickEditarInformationTramiteButton" prefHeight="39.0" prefWidth="111.0"
+                style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Editar" textAlignment="CENTER"
+                textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnEliminar" alignment="CENTER" layoutX="740.0" layoutY="487.0" mnemonicParsing="false"
+                onAction="#didClickEliminarInformationTramiteButton"
+                style="-fx-background-color: red; -fx-background-radius: 2em;" text="ELIMINAR" textAlignment="CENTER"
+                textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Button>
+        <TableView fx:id="tblInformacionTramites" layoutX="18.0" layoutY="82.0" prefHeight="379.0" prefWidth="829.0">
+            <columns>
+                <TableColumn fx:id="colFolioInformacionTramites" editable="false" maxWidth="300.0" prefWidth="62.0"
+                             text="Folio"/>
+                <TableColumn fx:id="colTituloInformacionTramites" editable="false" maxWidth="2000.0" prefWidth="107.0"
+                             text="Título"/>
+                <TableColumn fx:id="colProcesoInformacionTramites" editable="false" prefWidth="574.0" text="Proceso"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</AnchorPane>

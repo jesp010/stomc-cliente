@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="542.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MenuEmpleadosController">
+    <children>
+        <Label alignment="CENTER" layoutX="270.0" layoutY="14.0" text="Lista de Empleados" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblEmpleados" layoutX="14.0" layoutY="76.0" prefHeight="399.0" prefWidth="835.0">
+            <columns>
+                <TableColumn fx:id="colFolioEmpleado" editable="false" maxWidth="2000.0" prefWidth="75.0" text="Folio" />
+                <TableColumn fx:id="colNoEmpleado" editable="false" maxWidth="2000.0" prefWidth="75.0" text="No°" />
+                <TableColumn fx:id="colNombreEmpleado" editable="false" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colDireccionEmpleado" prefWidth="75.0" text="Dirección" />
+                <TableColumn fx:id="colDepartamentoEmpleado" editable="false" prefWidth="75.0" text="Departamento" />
+                <TableColumn fx:id="colPuntoDeAtencionEmpleado" editable="false" prefWidth="75.0" text="Punto de Atención" />
+                <TableColumn fx:id="colSucursalEmpleado" editable="false" prefWidth="75.0" text="Sucursal" />
+                <TableColumn fx:id="colPerfilEmpleado" editable="false" prefWidth="75.0" text="Perfil" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="btnAniadirEmpleado" alignment="CENTER" layoutX="14.0" layoutY="489.0" mnemonicParsing="false" onAction="#didClickAniadirEmpleadoButton" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Añadir" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnEditarEmpleado" alignment="CENTER" layoutX="112.0" layoutY="489.0" mnemonicParsing="false" onAction="#didClickEditarEmpleadoButton" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Editar" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnEliminarEmpleado" alignment="CENTER" layoutX="739.0" layoutY="489.0" mnemonicParsing="false" onAction="#didClickEliminarEmpleadoButton" style="-fx-background-color: red; -fx-background-radius: 2em;" text="ELIMINAR" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

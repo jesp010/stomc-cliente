@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="542.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AccionEmpleadoController">
+   <children>
+       <Label fx:id="lblEmpleadoAccion" alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="14.0" prefHeight="53.0" prefWidth="719.0" text="Empleado Accion" textAlignment="CENTER" wrapText="true">
+           <font>
+               <Font name="System Bold" size="36.0" />
+           </font>
+       </Label>
+      <Label layoutX="107.0" layoutY="143.0" text="Nombre:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="96.0" text="No°:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="185.0" text="Dirección:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="227.0" text="Departamento:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="350.0" text="Usuario:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="350.0" text="Contraseña:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="271.0" text="Sucursal:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="424.0" layoutY="271.0" text="Punto de Atención:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="397.0" text="Perfil:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNoEmpleado" layoutX="184.0" layoutY="90.0" onMousePressed="#resetField" promptText="Numero del empleado">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNombreEmpleado" layoutX="184.0" layoutY="137.0" onMousePressed="#resetField" prefHeight="39.0" prefWidth="619.0" promptText="Ingresé el nombre del empleado">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDireccionEmpleado" layoutX="184.0" layoutY="179.0" onMousePressed="#resetField" prefHeight="39.0" prefWidth="619.0" promptText="Ingresé la dirección del empleado">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDepartamentoEmpleado" layoutX="184.0" layoutY="221.0" onMousePressed="#resetField" prefHeight="39.0" prefWidth="619.0" promptText="Ingresé el departamento del empleado">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cboxSucursal" layoutX="184.0" layoutY="265.0" onMousePressed="#resetField" prefHeight="39.0" prefWidth="224.0" promptText="Ingresé la sucursal" visibleRowCount="4" />
+      <ComboBox fx:id="cboxPuntoDeAtencion" layoutX="579.0" layoutY="265.0" onMousePressed="#resetField" prefHeight="39.0" prefWidth="224.0" promptText="Ingresé el punto de atención" visibleRowCount="4" />
+      <Line endX="401.0" layoutX="431.0" layoutY="322.0" startX="-399.0" />
+      <TextField fx:id="txtUsuarioEmpleado" layoutX="184.0" layoutY="344.0" onMousePressed="#resetField" promptText="Ingresé la cuenta del empleado">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPasswordEmpleado" layoutX="579.0" layoutY="344.0" onMousePressed="#resetField" promptText="Ingresé la contraseña del empleado">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cboxPerfil" layoutX="184.0" layoutY="391.0" onMousePressed="#resetField" prefHeight="39.0" prefWidth="224.0" promptText="Ingresé el perfil del empleado" visibleRowCount="4" />
+      <Button fx:id="btnAceptar" alignment="CENTER" layoutX="14.0" layoutY="489.0" mnemonicParsing="false" onAction="#didClickAceptarButton" style="-fx-background-color: #0078D7; -fx-background-radius: 2em;" text="Añadir" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" alignment="CENTER" layoutX="733.0" layoutY="489.0" mnemonicParsing="false" onAction="#didClickCancelarButton" style="-fx-background-color: red; -fx-background-radius: 2em;" text="CANCELAR" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
